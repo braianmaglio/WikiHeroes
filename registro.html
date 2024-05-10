@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main>    
+        <header>
+            <section class="top">
+                <p>Descuentos 20%</p>
+            </section>
+            <section class="menu">
+                <h1>WikiHeroes</h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Contacto</a></li>
+                        <li><a href="./about.html">Registrarme</a></li>
+                        <li><a href="./contact.html">Ingresar</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <section class="main-form">
+            <article class="container-form">
+                <h1>Añadí tu super!</h1>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                
+                <form action="#" method="post"> 
+                    <div class="container-datos">  
+                        <div class="datos-comunes">         
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                            <label for="fecha">fecha</label>
+                            <input type="date" name="fecha" id="fecha">
+                            <textarea name="descripcion" id="descripcion">Descripción</textarea>
+                        </div>
+                        
+                        <div class="selectores">
+                            <label for="especie">Especie
+                                <select name="especie" id="especie">
+                                    <option value="none">elije una especie</option>
+                                    <option value="Humano">Humano</option>
+                                    <option value="Elfo">Elfo</option>
+                                    <option value="Enano">Enano</option>
+                                    <option value="Orco">Orco</option>
+                                </select>
+                            </label>
+                            <div class="foto">
+                                <label for="foto">Agregár foto</label>
+                                <input type="file" name="foto" id="foto" accept=".jpg .png .webp">
+                            </div>
+                            <label for="poderes" class="poderes"> Poderes </label>
+                            <label for="poderes">
+                                <input type="checkbox" name="poderes" id="volar"> Volar
+                            </label>
+                            <label for="poderes">
+                                <input type="checkbox" name="poderes" id="vistaLaser"> Vista de rayo laser
+                            </label>
+                            <label for="poderes">
+                                <input type="checkbox" name="poderes" id="inteligencia"> Super inteligencia
+                            </label>
+                            <label for="poderes">
+                                <input type="checkbox" name="poderes" id="billetera"> Billetera gorda
+                            </label>
+
+                            <label for="tipo" class="tipo"> Tipo de personaje </label>
+                                <label for="tipo">
+                                    <input type="radio" name="tipo" id="heroe"> Heroe/Heroina
+                                </label>
+                                <label for="tipo">
+                                    <input type="radio" name="tipo" id="villano"> Villano/a
+                                </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="bottom">
+            <p>Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+</html>

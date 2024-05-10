@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+header .top{
+    background-color: #D1891C;
+    padding-left: 20px;
+}
+
+header .menu{
+    width: 100%;
+    height: 100px;
+    background-color: #00669f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+header .menu h1{
+    color: #fff;
+}
+
+header .menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .menu ul li{
+    padding: 0 10px;
+}
+
+header .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+main .heroes{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+main .heroes .card {
+    width: 300px;
+    height: 529px;
+    background-color: #f3f3f3ff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0 10px;
+}
+
+
+
+main .heroes .card .fondo img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .heroes .card .fondo {
+    overflow: hidden;
+}
+
+.perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -60px;
+    z-index: 1;
+}
+
+main .heroes .card a{
+    width: 128.78px;
+    height: 48.52px;
+    background-color: #00669f;
+    text-align: center;
+    line-height: 48.52px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+main .heroes .card a:hover{
+    background-color: #004477;
+}
+
+main .heroes .card h3{
+    font-size: 1.5625rem;
+}
+
+main .heroes .card p{
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+
+aside{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00669f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50%;
+    margin: 0 10px;
+}
+
+aside a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff;
+    background-color: #00669f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Formulario de registros */
+
+.main-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form{
+    max-width: 954px;
+    width: 100%;
+    height: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    background-color: #00669f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+}
+
+.container-form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 0px;
+}
+
+.container-form h1{
+    font-family: inter;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 71.79px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.container-form p{
+    font-family: inter;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+.container-form form .container-datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.container-form form .datos-comunes{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.container-form form .selectores{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 30px;
+}
+
+.container-form form .selectores select, label{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form form .selectores select{
+    width: 343px;
+    height: 63px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    font-family: inter;
+    font-size: 1.25rem;
+}
+
+.container-datos label{
+    
+}
+
+.container-form form .container-datos .datos-comunes input{
+    width: 343px;
+    height: 63px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.container-form form .container-datos .datos-comunes textarea{
+    width: 343px;
+    height: 307px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+
+form .btn {
+    width: 466px;
+    height: 87px;
+    border-radius: 23px;
+    border: none;
+    background-color: #1CD1B0;
+    color: #fff;
+    font-family: inter;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
