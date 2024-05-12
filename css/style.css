@@ -52,10 +52,10 @@ main .heroes{
     gap: 30px;
 }
 
-
 main .heroes .card {
+    max-width: 1440px;
+    margin: inline auto;
     width: 300px;
-    height: 529px;
     background-color: #f3f3f3ff;
     border-radius: 10px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
@@ -67,7 +67,28 @@ main .heroes .card {
     margin: 0 10px;
 }
 
+.card-mas{
+    width: 300px;
+    height: 450px;
+    background-color: #f3f3f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
 
+.card-mas:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(201, 200, 200);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
+}
 
 main .heroes .card .fondo img {
     width: 100%;
@@ -79,6 +100,7 @@ main .heroes .card .fondo img {
 main .heroes .card .fondo {
     overflow: hidden;
 }
+
 
 .perfil {
     width: 120px;
@@ -155,135 +177,137 @@ footer{
 }
 
 /* Formulario de registros */
-
 .main-form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-form{
     max-width: 954px;
-    width: 100%;
-    height: 100%;
-    padding: 25px 30px;
-    border-radius: 5px;
-    background-color: #00669f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column ;
-}
-
-.container-form form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 0px;
-}
-
-.container-form h1{
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #00669F;
+    color: #fff;
     font-family: inter;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 71.79px;
     text-align: center;
-    color: #ffffff;
-
+    border-radius: 10px;
 }
 
-.container-form p{
-    font-family: inter;
-    font-size: 1.25rem;
+.main-form h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-form p{
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 14px;
-    text-align: left;
-    color: #ffffff;
-
 }
 
-.container-form form .container-datos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-
-.container-form form .datos-comunes{
+.form{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
-    gap: 30px;
-    margin: 20px;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
 }
 
-.container-form form .selectores{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    gap: 30px;
-}
-
-.container-form form .selectores select, label{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-form form .selectores select{
-    width: 343px;
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="file"],
+textarea,
+select {
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 16px;
     height: 63px;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8b969e;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    margin-top: 10px;
     border-radius: 15px;
-    border: none;
-    padding: 10px;
-    font-family: inter;
-    font-size: 1.25rem;
-}
-
-.container-datos label{
-    
-}
-
-.container-form form .container-datos .datos-comunes input{
-    width: 343px;
-    height: 63px;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-}
-
-.container-form form .container-datos .datos-comunes textarea{
-    width: 343px;
-    height: 307px;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
     resize: none;
 }
+textarea{
+    width: 343px;
+    height: 307px;
+}
 
-form .btn {
+label{
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+select {
+    padding: 6px;
+    height: 63px;
+    border-radius: 15px;
+}
+
+.selector-wrapper-check{
+    display: flex;
+    flex-flow: column;
+    width: 343px;
+    height: 312px;
+    margin-bottom: 40px;
+}
+
+.selector-wrapper label{
+    font-size: 1rem;
+}
+
+label.tittle{
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+hr{
+    margin: 20px;
+}
+
+.form .btn {
     width: 466px;
     height: 87px;
     border-radius: 23px;
     border: none;
     background-color: #1CD1B0;
-    color: #fff;
+    color: #000000;
     font-family: inter;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
+.selector-wrapper{
+    width: 343px;
+}
+
+@media screen and (min-width: 982px) {
+
+    form {
+        max-width: 982px;
+    }
+}

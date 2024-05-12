@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Registro</title>
+    <title>Registro de super</title>
 </head>
 <body>
     <main>    
@@ -24,58 +24,69 @@
             </section>
         </header>
         <section class="main-form">
-            <article class="container-form">
+            <article class="form-wrapper">
                 <h1>Añadí tu super!</h1>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
                 
-                <form action="#" method="post"> 
-                    <div class="container-datos">  
-                        <div class="datos-comunes">         
+                <form action="#" method="post" class="form"> 
+                    <div class="data-wrapper">  
+                        <div class="data-item">         
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre">
-                            <label for="fecha">fecha</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="ingrese el nombre del super">
+                        </div>
+                        <div class="data-item">
+                            <label for="fecha">Fecha</label>
                             <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <div class="data-item">
                             <textarea name="descripcion" id="descripcion">Descripción</textarea>
                         </div>
-                        
-                        <div class="selectores">
-                            <label for="especie">Especie
-                                <select name="especie" id="especie">
-                                    <option value="none">elije una especie</option>
-                                    <option value="Humano">Humano</option>
-                                    <option value="Elfo">Elfo</option>
-                                    <option value="Enano">Enano</option>
-                                    <option value="Orco">Orco</option>
-                                </select>
-                            </label>
-                            <div class="foto">
-                                <label for="foto">Agregár foto</label>
-                                <input type="file" name="foto" id="foto" accept=".jpg .png .webp">
-                            </div>
-                            <label for="poderes" class="poderes"> Poderes </label>
+                    </div>                       
+                    <div class="selector-wrapper">
+                        <div class="selector-item">
+                            <label for="especie" class="tittle">Especie</label>
+                            <select name="especie" id="especie">
+                                <option value="none">elije una especie</option>
+                                <option value="Humano">Humano</option>
+                                <option value="Elfo">Elfo</option>
+                                <option value="Enano">Enano</option>
+                                <option value="Orco">Orco</option>
+                            </select>
+                        </div>
+                        <div class="selector-item">
+                            <label for="foto" class="tittle">Agregár foto</label>
+                            <input type="file" name="foto" id="foto" accept=".jpg .png .webp">
+                        </div>
+                        <div class="selector-wrapper-check">
+                            <label for="poderes" class="tittle"> Poderes </label>
+                                <label for="poderes"> 
+                                    <input type="checkbox" name="poderes" id="volar">Volar
+                                </label>
+
+                                <label for="poderes">
+                                    <input type="checkbox" name="poderes" id="vistaLaser"> Vista de rayo laser
+                                </label>
+                            
                             <label for="poderes">
-                                <input type="checkbox" name="poderes" id="volar"> Volar
-                            </label>
-                            <label for="poderes">
-                                <input type="checkbox" name="poderes" id="vistaLaser"> Vista de rayo laser
-                            </label>
-                            <label for="poderes">
-                                <input type="checkbox" name="poderes" id="inteligencia"> Super inteligencia
-                            </label>
-                            <label for="poderes">
+                                <input type="checkbox" name="poderes" id="inteligencia">Super inteligencia
+                            </label> 
+                                <label for="poderes"> 
                                 <input type="checkbox" name="poderes" id="billetera"> Billetera gorda
                             </label>
+                            <hr>
+                            <label for="tipo" class="tittle"> Tipo de personaje </label>
 
-                            <label for="tipo" class="tipo"> Tipo de personaje </label>
                                 <label for="tipo">
-                                    <input type="radio" name="tipo" id="heroe"> Heroe/Heroina
+                                    <input type="radio" name="tipo" id="heroe">Heroe/Heroina
+                                </label> 
+                                <div class="selector-item">
+                                    <label for="tipo"> 
+                                    <input type="radio" name="tipo" id="villano">Villano/a
                                 </label>
-                                <label for="tipo">
-                                    <input type="radio" name="tipo" id="villano"> Villano/a
-                                </label>
+                                </div>
                         </div>
                     </div>
-                    <input type="submit" value="Enviar" class="btn">
+                    <input type="submit" value="Añadir" class="btn">
                 </form>
             </article>
         </section>
