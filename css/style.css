@@ -27,6 +27,13 @@ header .menu h1{
     color: #fff;
 }
 
+header .menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 header .menu ul{
     display: flex;
     list-style: none;
@@ -54,6 +61,7 @@ main .heroes{
 
 main .heroes .card {
     max-width: 1440px;
+    height: 450px;
     margin: inline auto;
     width: 300px;
     background-color: #f3f3f3ff;
@@ -75,6 +83,7 @@ main .heroes .card {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card-mas:hover{
